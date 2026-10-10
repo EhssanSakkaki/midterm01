@@ -1,0 +1,372 @@
+/*put CSS here*/
+
+/* use this lines to reset spacing */
+* { 
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+/* Header code */
+header { 
+display: flex;
+align-items: center;
+justify-content: center;
+position: relative;
+height: 60px;
+background-color: #0a0a0a;
+}
+
+/* Left title or logo */
+.logo {
+font-family: 'Roboto', sans-serif;
+position: absolute;
+left: 40px;
+font-size: 1.8em;
+font-weight: bold;
+color: white;
+}
+
+/* Center navigation */
+nav {
+font-family: 'Roboto', sans-serif;
+display: flex;
+gap: 40px;
+}
+
+
+nav a {
+text-decoration: none; /* removes underline for texts */
+color: white;
+font-size: 1.1em;
+font-weight: bold;
+transition: color 0.4s;
+}
+
+/* Hover effect */
+nav a:hover {
+color: rgb(234, 0, 255);
+
+}
+
+footer {
+  background-color: transparent;
+  font-size: small;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: auto;
+
+  gap: 10px;
+  padding: 24px 0px;
+  /* background-color: #0a0a0a; */
+
+}
+
+footer nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  width: 90%;
+  margin-inline: auto;
+}
+
+footer nav a {
+  min-width: 0;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
+
+footer h2 {
+  color: white;
+  text-align: left;
+  width: 90%;
+  margin-inline: auto;
+}
+
+/* Active page with underline */
+nav a.active {
+color: rgb(234, 0, 255);
+font-weight: bold;
+border-bottom: 3px solid rgb(234, 0, 255);
+padding-bottom: 5px;
+}
+
+
+/* Background stuff */
+body{
+   /* background-color: #0a0a0a; */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+    background-image: url(images/bg01.png);
+    font-family: 'Roboto', sans-serif;
+    background-size: center; /* needs to fix later. Cover or contain didn't work. */
+    background-position: center;
+    background-repeat: repeat;
+}
+
+
+h1{
+  /*use google font*/
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  text-align: center;
+  color: #ffffff;
+}
+
+h2{
+  /*use google font*/
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  color: #ffffff;
+}
+
+h3{
+  /*use google font*/
+  font-family: 'Roboto', sans-serif;
+  color: #c07b7b;
+  font-size: 24px;
+  text-align: left;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+
+}
+
+
+p{
+
+}
+
+
+
+.homecontent {
+display: flex;
+justify-content: space-between;
+align-items: stretch;
+gap: 30px;
+width: 90%;
+margin: 50px auto;
+}
+
+.left-text h3{
+  /*use google font*/
+  font-family: 'Roboto', sans-serif;
+  color: rgb(234, 0, 255);
+  font-size: 24px;
+  text-align: left;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+
+}
+
+
+
+
+.button01 a,
+.button01 a:visited {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  background-color: #242424;
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 40px;
+  padding: 10px 16px;
+  transition: color 0.3s, border-color 0.3s, background-color 0.3s;
+}
+
+.button01 a:hover,
+.button01 a:focus-visible {
+  color: rgb(255, 255, 255);
+  border-color: rgb(0, 0, 0);
+  background-color: rgb(234, 0, 255);
+}
+
+
+.left-text {
+  width: 45%;
+  
+}
+
+.left-text p{
+color: #ffffff;
+text-align: justify;
+font-size: 24px;
+line-height: 1.6;
+width: 100%;
+}
+
+.right-image {
+  width: 55%;
+  display: flex;
+}
+
+
+.right-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+/* Firefly page */
+
+.top-banner {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.fireflycontent {
+display: flex;
+justify-content: space-between;
+align-items: stretch;
+gap: 40px;
+width: 90%;
+margin: 50px auto;
+}
+
+.right-text h3{
+  /*use google font*/
+  font-family: 'Roboto', sans-serif;
+  color: rgb(234, 0, 255);
+  font-size: 24px;
+  text-align: left;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+
+}
+
+.right-text {
+  width: 45%;
+  
+}
+
+.right-text p{
+color: #ffffff;
+text-align: justify;
+font-size: 24px;
+line-height: 1.6;
+width: 100%;
+}
+
+
+
+
+/* For Generate section */
+
+
+
+.generatecontent {
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 20px;
+width: 70%;
+margin: 10px auto;
+}
+
+.top-image h3{
+  /*use google font*/
+  font-family: 'Roboto', sans-serif;
+  color: #fdfcfc;
+  font-size: 24px;
+  text-align: center;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+
+}
+
+.top-video h3{
+  /*use google font*/
+  font-family: 'Roboto', sans-serif;
+  color: rgb(234, 0, 255);
+  font-size: 24px;
+  text-align: center;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+
+}
+
+
+
+.button02 a,
+.button02 a:visited {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  background-color: #242424;
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 40px;
+  padding: 10px 16px;
+  transition: color 0.3s, border-color 0.3s, background-color 0.3s;
+}
+
+.button02 a:hover,
+.button02 a:focus-visible {
+  color: rgb(255, 255, 255);
+  border-color: rgb(0, 0, 0);
+  background-color: rgb(234, 0, 255);
+}
+
+.button02 h3 {
+  text-align: center;
+}
+
+
+.bottom-text {
+  width: 90%;
+  
+}
+
+.bottom-text p{
+color: #ffffff;
+text-align: justify;
+font-size: 24px;
+line-height: 1.6;
+width: 100%;
+}
+
+.top-image {
+  width: 90%;
+  display: block;
+}
+
+
+.top-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+
+.top-video {
+  width: 90%;
+  display: block;
+}
+
+
+.top-video video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+
